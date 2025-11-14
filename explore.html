@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href='https://fonts.googleapis.com/css?family=Jolly+Lodger'
-            rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Jolly+Lodger'rel='stylesheet'>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <script src="https://cdn.tailwindcss.com"></script>
@@ -12,11 +12,11 @@
 
         <title>Explorer les jeux</title>
     </head>
-    <body class="font-['Jolly_Lodger'] lg:flex">
+    <body class="font-['Jolly_Lodger'] lg:flex bg-[linear-gradient(90deg,#001542_10%,#0035a8_74%)]">
         <!-- la partie mobile -->
         <div class=" bg-white flex-col lg:hidden">
             <div class="flex justify-between bg-[#001542] text-white">
-                <div class="p-5">logo</div>
+                <div class="p-5 text-[40px] text-yellow-400">PixelQuest</div>
                 <div class="flex justify-center items-center">
                     <button
                         class="bg-[#73B9FF] w-[100px] h-[30px] border-none rounded-[50px] text-[15px] text-[#001542]">signe
@@ -26,8 +26,7 @@
                 </div>
             </div>
             <div id="menu" hidden>
-                <ul
-                    class="flex flex-col justify-center items-center w-[100%] h-[300px] bg-[#001542]">
+                <ul class="flex flex-col justify-center items-center w-[100%] h-[300px] bg-[#001542]">
                     <li id="jeu"
                         class="flex justify-center items-center w-[100%] text-white text-[20px] p-5 hover:bg-[#6e7c9b80] "><i
                             class="fa-solid fa-gamepad mr-5"></i><a
@@ -50,6 +49,7 @@
         <!-- la partie discktop -->
         <div class="hidden lg:flex ">
             <div class="w-64 h-screen bg-[#001542] ">
+                <div id="logo" class="p-5 text-[50px] text-yellow-400">PixelQuest</div>
                 <div id="logo">image</div>
                 <div id="jeu"
                     class="text-white text-[25px] p-2 hover:bg-[#6e7c9b80]"><i
@@ -70,7 +70,7 @@
             </div>
         </div>
         <div id="container"
-            class="flex-1 h-screen bg-[linear-gradient(125deg,#001542_0%,#0035a8_74%)]">
+            class="flex-1 h-screen bg-[linear-gradient(90deg,#001542_10%,#0035a8_74%)]">
             <div class="w-640 flex justify-between p-5">
                 <div class="text-white text-[25px]"><i
                         class="fa-solid fa-gamepad p-5"></i>Explorer les
@@ -79,6 +79,13 @@
                     class="bg-[#73B9FF] w-[150px] h-[40px] border-none rounded-[50px] text-[25px] hidden lg:inline-block text-center focus:outline-none focus:ring-2 focus:ring-blue-500">
                     sign up
                 </button>
+            </div>
+               <div class="carts flex flex-col justify-center items-center text-white w-full md:grid grid-cols-3 grid-rows-3 w-5 h-15 lg:grid grid-cols-3 grid-rows-3 gap-5">
+                   <img id="hhh" src="image/load.gif" class="w-[50px] h-[50px] lg:w-[70px] h-[70px]">
+                    <!-- le code des cartes  -->
+                     <!-- fin de carte  -->
+               </div>
+               <button id="next" class="text-white text-[50px] flex justify-self-center items-center p-5 hover:text-[70px]"><i class="fa-solid fa-circle-arrow-right p-5 "></i>Next</button>
             </div>
         </div>
         <script>
